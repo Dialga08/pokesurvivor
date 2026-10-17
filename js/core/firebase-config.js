@@ -14,7 +14,7 @@
 G.FIREBASE_CONFIG = {
   apiKey: 'AIzaSyBe_m99-K-GU-dHdRzbw64YMhPF9wZs4Z4',
   authDomain: 'personal-pokesurvivor.firebaseapp.com',
-  databaseURL: 'https://personal-pokesurvivor-default-rtdb.europe-west1.firebasedatabase.app/',
+  databaseURL: 'https://personal-pokesurvivor-default-rtdb.europe-west1.firebasedatabase.app',
   projectId: 'personal-pokesurvivor',
   storageBucket: 'personal-pokesurvivor.firebasestorage.app',
   messagingSenderId: '226976870078',

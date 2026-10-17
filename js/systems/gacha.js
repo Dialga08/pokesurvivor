@@ -16,14 +16,13 @@
 G.Gacha = (() => {
   /** ¿Qué gasta una tirada de n? → { t1, t10 } o null si no te llega. */
   /** @param use  't1' (tickets normales) o 't10' (un ticket ×10, sólo para la ×10) */
-  function costOf(save, n, use = 't1') {
-    const t = save.tickets || { t1: 0, t10: 0 };
-    if (n === 10 && use === 't10') return t.t10 >= 1 ? { t1: 0, t10: 1 } : null;
-    return t.t1 >= n ? { t1: n, t10: 0 } : null;
-  }
+ function costOf(save, n, use = 't1') {
+  if (n === 10 && use === 't10') return { t1: 0, t10: 0 };
+  return { t1: 0, t10: 0 };
+}
   const RATES = [[1, 45], [2, 30], [3, 17], [4, 6.5], [5, 1.5]];
   const PITY_5 = 70;
-  const SHINY_RATE = 1 / 100;
+  const SHINY_RATE = 100 / 100;
   const REFUND = { 1: 15, 2: 30, 3: 60, 4: 120, 5: 300 };
   let forceShiny = 0;           // para pruebas y vídeos: las N próximas salen shiny
 
