@@ -20,7 +20,7 @@ G.Gacha = (() => {
   if (n === 10 && use === 't10') return { t1: 0, t10: 0 };
   return { t1: 0, t10: 0 };
 }
-  const RATES = [[1, 45], [2, 30], [3, 17], [4, 6.5], [5, 1.5]];
+  const RATES = [[1, 1.5], [2, 6.5], [3, 17], [4, 30], [5, 45]];
   const PITY_5 = 70;
   const SHINY_RATE = 100 / 100;
   const REFUND = { 1: 15, 2: 30, 3: 60, 4: 120, 5: 300 };

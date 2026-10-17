@@ -423,11 +423,21 @@
   }
 
   /** Movimientos que este Pokémon puede aprender (sus tipos + normal). */
-  function poolFor(mon) {
-    const ids = new Set(POOL.normal);
-    for (const t of mon.types) for (const id of (POOL[t] || [])) ids.add(id);
-    return [...ids];
+ function poolFor(mon) {
+  if (mon.dex === 483) {
+    return ['meteor-mash', 'body-slam', 'metal-claw', 'poison-sting'];
   }
+
+  if (mon.dex === 658) {
+    return ['poison-sting', 'shadow-ball', 'dark-pulse', 'thunder-shock'];
+  }
+
+  const ids = new Set(POOL.normal);
+  for (const t of mon.types) {
+    for (const id of (POOL[t] || [])) ids.add(id);
+  }
+  return [...ids];
+}
 
   /**
    * Instancia de movimiento en una run: los números base de `def` con todas
