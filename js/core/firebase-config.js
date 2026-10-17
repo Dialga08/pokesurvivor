@@ -14,7 +14,7 @@
 G.FIREBASE_CONFIG = {
   apiKey: 'your apiKey',
   authDomain: 'your authDomain',
-  databaseURL: 'your databaseURL',
+  databaseURL: 'https://personal-pokesurvivor-default-rtdb.europe-west1.firebasedatabase.app/',
   projectId: 'your projectId',
   storageBucket: 'your storageBucket',
   messagingSenderId: 'your messagingSenderId',
