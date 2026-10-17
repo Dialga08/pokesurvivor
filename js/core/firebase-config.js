@@ -12,7 +12,7 @@
 // SIN Identity Platform, así las cuentas son gratis sin límite. ¡No pulsar nunca
 // "Actualizar a Identity Platform" en su consola! (El viejo era pokesurvivor-jpter.)
 G.FIREBASE_CONFIG = {
-  apiKey: 'your apiKey',
+  apiKey: 'AIzaSyBe_m99-K-GU-dHdRzbw64YMhPF9wZsZ4',
   authDomain: 'your authDomain',
   databaseURL: 'https://personal-pokesurvivor-default-rtdb.europe-west1.firebasedatabase.app/',
   projectId: 'your projectId',
