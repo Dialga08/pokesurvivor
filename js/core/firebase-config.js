@@ -13,12 +13,12 @@
 // "Actualizar a Identity Platform" en su consola! (El viejo era pokesurvivor-jpter.)
 G.FIREBASE_CONFIG = {
   apiKey: 'AIzaSyBe_m99-K-GU-dHdRzbw64YMhPF9wZs4Z4',
-  authDomain: 'your authDomain',
+  authDomain: 'personal-pokesurvivor.firebaseapp.com',
   databaseURL: 'https://personal-pokesurvivor-default-rtdb.europe-west1.firebasedatabase.app/',
-  projectId: 'your projectId',
-  storageBucket: 'your storageBucket',
-  messagingSenderId: 'your messagingSenderId',
-  appId: 'your appId'
+  projectId: 'personal-pokesurvivor',
+  storageBucket: 'personal-pokesurvivor.firebasestorage.app',
+  messagingSenderId: '226976870078',
+  appId: '1:226976870078:web:edbd1234436b840e8e38ef'
 };
 
 /* Ejemplo de cómo debe quedar:
