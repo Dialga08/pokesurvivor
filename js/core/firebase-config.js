@@ -11,7 +11,15 @@
 // Proyecto pokesurvivor-free (desde el 12-10-2026): autenticación normal de Firebase,
 // SIN Identity Platform, así las cuentas son gratis sin límite. ¡No pulsar nunca
 // "Actualizar a Identity Platform" en su consola! (El viejo era pokesurvivor-jpter.)
-G.FIREBASE_CONFIG = null;
+G.FIREBASE_CONFIG = {
+  apiKey: 'your apiKey',
+  authDomain: 'your authDomain',
+  databaseURL: 'your databaseURL',
+  projectId: 'your projectId',
+  storageBucket: 'your storageBucket',
+  messagingSenderId: 'your messagingSenderId',
+  appId: 'your appId'
+};
 
 /* Ejemplo de cómo debe quedar:
 G.FIREBASE_CONFIG = {
