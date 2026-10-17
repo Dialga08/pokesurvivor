@@ -400,7 +400,11 @@
       desc: 'Maldición que salta entre enemigos. Mucho más daño si están quemados, envenenados o frenados.',
       cd: 0.9, dmg: 17, count: 4, radius: 150, hex: 1.7 }
   ];
-
+  // 20% shorter cooldown for all moves
+  const GLOBAL_CD_MULTIPLIER = 0.05;
+  for (const m of RAW) {
+    m.cd *= GLOBAL_CD_MULTIPLIER;
+  }
   // Cuerpo a cuerpo (12-10-2026): +20 % de daño y +25 % de alcance y de arco
   // (y -25 % de daño recibido mientras sea tu ataque activo, en player.js).
   // Pegaban bien, pero había que arriesgar mucho más que con los de distancia.
